@@ -895,7 +895,7 @@
         ]
       },
       "widgets_values": [
-        "wan2.2\\wan2.2_ti2v_5B_fp16.safetensors",
+        "wan2.2_ti2v_5B_fp16.safetensors",
         "default"
       ]
     },
@@ -1104,7 +1104,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "wan2.1\\Wan21_PusaV1_LoRA_14B_rank512_bf16.safetensors",
+        "Wan21_PusaV1_LoRA_14B_rank512_bf16.safetensors",
         1.2000000000000002
       ]
     },
@@ -1294,7 +1294,7 @@
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "wan2.1\\lightx2v_14B_T2V_cfg_step_distill_lora_adaptive_rank_quantile_0.15_bf16.safetensors",
+        "lightx2v_14B_T2V_cfg_step_distill_lora_adaptive_rank_quantile_0.15_bf16.safetensors",
         2.5000000000000004
       ]
     },
