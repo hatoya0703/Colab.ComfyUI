@@ -1,8 +1,8 @@
 {
   "id": "qwen-image-edit-workflow",
   "revision": 0,
-  "last_node_id": 10,
-  "last_link_id": 10,
+  "last_node_id": 11,
+  "last_link_id": 11,
   "nodes": [
     {
       "id": 8,
@@ -165,12 +165,52 @@
       ]
     },
     {
-      "id": 4,
-      "type": "EmptyLatentImage",
+      "id": 10,
+      "type": "TextEncodeQwenImageEditPlus",
       "pos": [950, 350],
-      "size": [270, 106],
+      "size": [400, 150],
       "flags": {},
       "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 10
+        },
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [11]
+        }
+      ],
+      "title": "Negative Prompt (leave empty)",
+      "properties": {
+        "Node name for S&R": "TextEncodeQwenImageEditPlus"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 4,
+      "type": "EmptyLatentImage",
+      "pos": [950, 550],
+      "size": [270, 106],
+      "flags": {},
+      "order": 6,
       "mode": 0,
       "outputs": [
         {
@@ -194,7 +234,7 @@
       "pos": [1400, 100],
       "size": [300, 262],
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -210,7 +250,7 @@
         {
           "name": "negative",
           "type": "CONDITIONING",
-          "link": null
+          "link": 11
         },
         {
           "name": "latent_image",
@@ -244,7 +284,7 @@
       "pos": [1750, 100],
       "size": [150, 46],
       "flags": {},
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -275,7 +315,7 @@
       "pos": [1750, 200],
       "size": [350, 350],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -298,7 +338,9 @@
     [6, 1, 2, 6, 1, "VAE"],
     [7, 5, 0, 6, 0, "LATENT"],
     [8, 6, 0, 7, 0, "IMAGE"],
-    [9, 8, 0, 9, 0, "STRING"]
+    [9, 8, 0, 9, 0, "STRING"],
+    [10, 1, 1, 10, 0, "CLIP"],
+    [11, 10, 0, 5, 2, "CONDITIONING"]
   ],
   "groups": [
     {
