@@ -131,14 +131,14 @@
     },
     {
       "id": 7,
-      "type": "CLIPTextEncode",
+      "type": "DeepTranslatorCLIPTextEncodeNode",
       "pos": [
         -58.415767669677734,
         415.1250305175781
       ],
       "size": [
         425.27801513671875,
-        180.6060791015625
+        250
       ],
       "flags": {},
       "order": 16,
@@ -160,14 +160,18 @@
           ]
         }
       ],
-      "title": "CLIP Text Encode (Negative Prompt)",
+      "title": "Negative Prompt (Japanese OK)",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走"
+        "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ],
       "color": "#322",
       "bgcolor": "#533"
@@ -1472,14 +1476,14 @@
     },
     {
       "id": 6,
-      "type": "CLIPTextEncode",
+      "type": "DeepTranslatorCLIPTextEncodeNode",
       "pos": [
         -72.78999328613281,
         104.326171875
       ],
       "size": [
         422.84503173828125,
-        164.31304931640625
+        250
       ],
       "flags": {},
       "order": 17,
@@ -1501,14 +1505,18 @@
           ]
         }
       ],
-      "title": "CLIP Text Encode (Positive Prompt)",
+      "title": "Positive Prompt (Japanese OK)",
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "The soldier moves forward through the smoldering battlefield holding her rifle in both hands, her armored boots crunching over scorched debris as she surveys the devastation with slow, deliberate precision. Her piercing eyes sweep left and right, scanning the smoke-filled horizon as stray embers drift past her face. The orange glow of nearby fires flickers against her dented, soot-covered armor, casting dancing shadows across the blackened steel. Wind carries ash and smoke past her silhouette. Her breath is calm but heavy, fogging momentarily in the cold air as she presses onward. The camera tracks her from a low, steady position behind and slightly to the right, and then zooms out to show the whole battlefield, emphasizing the destruction around her and the resolve in her gait. The scene appears as hyper-realistic footage; no text, no watermarks, no lens distortion, no flickering, no anatomical errors; 4K UHD; 16:9; 30fps; light film grain; brand-safe true. camera remains centered on her, tracking at same speed"
+        "The soldier moves forward through the smoldering battlefield holding her rifle in both hands, her armored boots crunching over scorched debris as she surveys the devastation with slow, deliberate precision. Her piercing eyes sweep left and right, scanning the smoke-filled horizon as stray embers drift past her face. The orange glow of nearby fires flickers against her dented, soot-covered armor, casting dancing shadows across the blackened steel. Wind carries ash and smoke past her silhouette. Her breath is calm but heavy, fogging momentarily in the cold air as she presses onward. The camera tracks her from a low, steady position behind and slightly to the right, and then zooms out to show the whole battlefield, emphasizing the destruction around her and the resolve in her gait. The scene appears as hyper-realistic footage; no text, no watermarks, no lens distortion, no flickering, no anatomical errors; 4K UHD; 16:9; 30fps; light film grain; brand-safe true. camera remains centered on her, tracking at same speed",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ],
       "color": "#232",
       "bgcolor": "#353"

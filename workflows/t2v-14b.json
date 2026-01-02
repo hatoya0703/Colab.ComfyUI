@@ -75,9 +75,9 @@
     },
     {
       "id": 4,
-      "type": "CLIPTextEncode",
+      "type": "DeepTranslatorCLIPTextEncodeNode",
       "pos": [500, 100],
-      "size": [400, 150],
+      "size": [400, 200],
       "flags": {},
       "order": 3,
       "mode": 0,
@@ -95,19 +95,25 @@
           "links": [5]
         }
       ],
-      "title": "Positive Prompt",
+      "title": "Positive Prompt (Japanese OK)",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "A cat walking on the beach at sunset, cinematic lighting, 4K"
+        "A cat walking on the beach at sunset, cinematic lighting, 4K",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ]
     },
     {
       "id": 5,
-      "type": "CLIPTextEncode",
-      "pos": [500, 300],
-      "size": [400, 100],
+      "type": "DeepTranslatorCLIPTextEncodeNode",
+      "pos": [500, 350],
+      "size": [400, 200],
       "flags": {},
       "order": 4,
       "mode": 0,
@@ -125,18 +131,24 @@
           "links": [6]
         }
       ],
-      "title": "Negative Prompt",
+      "title": "Negative Prompt (Japanese OK)",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "blurry, low quality, distorted, watermark"
+        "blurry, low quality, distorted, watermark",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ]
     },
     {
       "id": 6,
       "type": "EmptyHunyuanLatentVideo",
-      "pos": [500, 450],
+      "pos": [500, 600],
       "size": [270, 130],
       "flags": {},
       "order": 5,

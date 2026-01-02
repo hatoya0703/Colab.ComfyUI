@@ -125,9 +125,9 @@
     },
     {
       "id": 6,
-      "type": "CLIPTextEncode",
+      "type": "DeepTranslatorCLIPTextEncodeNode",
       "pos": [500, 100],
-      "size": [400, 150],
+      "size": [400, 200],
       "flags": {},
       "order": 5,
       "mode": 0,
@@ -145,19 +145,25 @@
           "links": [15]
         }
       ],
-      "title": "Positive Prompt",
+      "title": "Positive Prompt (Japanese OK)",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "The subject starts moving, cinematic motion, smooth animation"
+        "The subject starts moving, cinematic motion, smooth animation",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ]
     },
     {
       "id": 7,
-      "type": "CLIPTextEncode",
-      "pos": [500, 300],
-      "size": [400, 100],
+      "type": "DeepTranslatorCLIPTextEncodeNode",
+      "pos": [500, 350],
+      "size": [400, 200],
       "flags": {},
       "order": 6,
       "mode": 0,
@@ -175,18 +181,24 @@
           "links": [16]
         }
       ],
-      "title": "Negative Prompt",
+      "title": "Negative Prompt (Japanese OK)",
       "properties": {
-        "Node name for S&R": "CLIPTextEncode"
+        "Node name for S&R": "DeepTranslatorCLIPTextEncodeNode"
       },
       "widgets_values": [
-        "blurry, low quality, distorted, watermark"
+        "blurry, low quality, distorted, watermark",
+        "japanese",
+        "english",
+        false,
+        "",
+        "",
+        "GoogleTranslator"
       ]
     },
     {
       "id": 8,
       "type": "CLIPVisionEncode",
-      "pos": [500, 450],
+      "pos": [500, 600],
       "size": [300, 78],
       "flags": {},
       "order": 7,
@@ -218,7 +230,7 @@
     {
       "id": 9,
       "type": "WanImageToVideo",
-      "pos": [500, 580],
+      "pos": [500, 730],
       "size": [300, 210],
       "flags": {},
       "order": 8,
