@@ -86,7 +86,7 @@
     },
     {
       "id": 99,
-      "type": "ApplyTeaCacheWan",
+      "type": "WanVideoTeaCache",
       "pos": [650, -150],
       "size": [250, 130],
       "flags": {},
@@ -102,7 +102,7 @@
     },
     {
       "id": 100,
-      "type": "ApplyTeaCacheWan",
+      "type": "WanVideoTeaCache",
       "pos": [650, 0],
       "size": [250, 130],
       "flags": {},
