@@ -335,7 +335,7 @@
       ],
       "outputs": [{"name": "Filenames", "type": "VHS_FILENAMES", "links": null}],
       "properties": {"Node name for S&R": "VHS_VideoCombine"},
-      "widgets_values": ["video/segment_AB", 30, 0, "h264-mp4", "ffmpeg", "crf", 19, "mpeg4", "mpeg4", false, "yuv420p", null, null],
+      "widgets_values": {"frame_rate": 30, "loop_count": 0, "filename_prefix": "segment_AB", "format": "video/h264-mp4", "pix_fmt": "yuv420p", "crf": 19, "save_metadata": true, "pingpong": false, "save_output": true, "videopreview": {"hidden": false, "paused": false, "params": {}}},
       "title": "💾 Save Segment A→B"
     },
     {
